@@ -56,10 +56,6 @@ class Cycling extends Workout {
   }
 }
 
-// const run1 = new Running([39, -12], 5.2, 24, 178);
-// const cycling1 = new Cycling([39, -12], 27, 95, 523);
-// console.log(run1, cycling1);
-
 ////////////////////////////////////////////
 // APPlICATION ARCHITECTURE
 
@@ -159,9 +155,6 @@ class App {
       const cadence = +inputCadence.value;
       // Check if data is valid
       if (
-        // !Number.isFinite(distance) ||
-        // !Number.isFinite(duration) ||
-        // !Number.isFinite(cadence)
         !validInputs(distance, duration, cadence) ||
         !allPositive(distance, duration, cadence)
       )
@@ -281,9 +274,6 @@ class App {
         duration: 1,
       },
     });
-
-    // using the public interface
-    // workout.click();
   }
 
   _setLocalStorage() {
